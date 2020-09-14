@@ -1,6 +1,6 @@
 def dictionary_converter(array):
     return {arr: index_list for arr in array for index_list in
-            [[idx for idx, value in enumerate(array) if value == arr] for idx in range(len(array))]}
+            [[idx for idx, value in enumerate(array) if value == arr] for i in range(len(array))]}
 
 
 def jaccard(first_set, second_set):
@@ -19,6 +19,6 @@ if __name__ == '__main__':
     in_array = input("Input array: ").split(" ")
     print(dictionary_converter(in_array))
 
-    in_first = input("Input first set: ").split(" ")
-    in_second = input("Input second set: ").split(" ")
-    print(jaccard(in_first, in_second))
+    #in_first = input("Input first set: ").split(" ")
+    #in_second = input("Input second set: ").split(" ")
+    #print(jaccard(in_first, in_second))
