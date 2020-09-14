@@ -15,9 +15,9 @@ def csv_write(file, data):
     header = ["item", "country", "year", "sales"]
     out.writerow(header)
     for unit in data:
-        item_info = list(unit.values())
-        item = item_info[0]
-        country_info = item_info[1]
+
+        item = unit['item']
+        country_info = unit['sales_by_country']
 
         for country in country_info:
             years_info = country_info[country]
